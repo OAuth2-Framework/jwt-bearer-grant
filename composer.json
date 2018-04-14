@@ -1,0 +1,46 @@
+{
+    "name": "oauth2-framework/jwt-bearer-grant",
+    "type": "library",
+    "description": "JWT Bearer Grant for the OAuth2 Framework",
+    "license": "MIT",
+    "keywords": ["RFC6749", "oauth2", "framework", "jwt", "bearer", "grant", "library"],
+    "homepage": "https://oauth2-framework.spomky-labs.com/",
+    "authors": [
+        {
+            "name": "Florent Morselli",
+            "homepage": "https://github.com/Spomky"
+        },
+        {
+            "name": "All contributors",
+            "homepage": "https://github.com/OAuth2-Framework/oauth2-framework/contributors"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "oauth2-framework/core": "^0.0@dev",
+        "oauth2-framework/token-endpoint": "^0.0@dev",
+        "web-token/jwt-signature": "^1.1@beta",
+        "web-token/jwt-checker": "^1.1@beta",
+        "web-token/jwt-core": "^1.1@beta"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.5"
+    },
+    "suggest": {
+        "web-token/jwt-encryption": "For encrypted token (JWE) support.",
+        "web-token/jwt-key-mgmt": "For client parameter 'jwks_uri' (JKU) support."
+    },
+    "autoload": {
+        "psr-4": {
+            "OAuth2Framework\\Component\\JwtBearerGrant\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.0.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
